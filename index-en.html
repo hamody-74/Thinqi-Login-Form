@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Style File -->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <form action="" method="post">
+            <div class="lang">
+                <a href="index-en.html">English</a> | <a href="index-ar.html">عربي</a>
+            </div>
+            <h1>Login | Thi<span>q</span>i</h1>
+            <select name="user-type" required>
+                <option value="" selected>Select User Type</option>
+                <option value="admin">Admin</option>
+                <option value="staff">Staff</option>
+                <option value="Student">Student</option>
+            </select>
+            <span></span>
+            <input type="email" class="email" placeholder="Email" name="user-email" autofocus required>
+            <input type="password" class="password" placeholder="Password" name="user-password" required>
+            <span></span>
+            <a href="####">Forget Password?</a>
+            <div class="remember">
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">
+                    <span class="custom-ch"></span>
+                    Remember me
+                </label>
+            </div>
+            <input type="submit" value="Login" class="submit">
+        </form>
+    </main>
+</body>
+
+</html>

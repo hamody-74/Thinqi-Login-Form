@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+main {
+    min-height: 100vh;
+    background: black url("../Imges/bg.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+}
+
+
+.lang {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 11px;
+    display: flex;
+    align-items: end;
+    gap: 5px;
+}
+
+.lang > a {
+    color: white;
+    font-size: 11px;
+}
+
+.lang > a:hover {
+    color: #0075ff;
+}
+form {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px black;
+    padding: 30px;
+    display: flex;
+    flex-flow: wrap column;
+    gap: 20px;
+    width: 100%;
+    max-width: 380px;
+}
+
+a {
+    text-decoration: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+form>h1 {
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+select {
+    margin-top: 25px;
+    background: transparent;
+    border: none;
+    color: white;
+    padding-bottom: 4px;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+select>option {
+    color: black;
+}
+
+form>input {
+    padding: 15px 30px;
+    max-width: 100%;
+}
+
+form>input.email,
+form>input.password {
+    position: relative;
+}
+
+form>input.email {
+    margin-top: -25px;
+}
+
+form>span {
+    position: relative;
+}
+
+
+
+form>span:first-of-type:before,
+form>span:last-of-type:before {
+    font-family: var(--fa-style-family-classic);
+    position: absolute;
+    left: 10px;
+    font-weight: 900;
+    color: #ccc;
+    z-index: 1;
+}
+
+form>span:first-of-type:before {
+    content: '\f007';
+    top: 10px;
+}
+
+form>span:last-of-type:before {
+    content: '\f023';
+    top: -54px;
+}
+
+form>input.email::placeholder,
+form>input.password::placeholder {
+    color: #ccc;
+}
+
+
+form>input.email:focus::placeholder,
+form>input.password:focus::placeholder {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    opacity: 0;
+}
+
+form>a {
+    margin-top: -25px;
+    color: white;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    width: fit-content;
+}
+
+form>a:hover {
+    color: #0075ff;
+}
+
+form .remember label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    cursor: pointer;
+    width: fit-content;
+}
+
+form .remember>input {
+    display: none;
+}
+
+form .remember span.custom-ch {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+}
+
+form .remember span {
+    position: relative;
+}
+
+form .remember span::before {
+    font-family: var(--fa-style-family-classic);
+    content: '\f00c';
+    position: absolute;
+    font-weight: 900;
+    font-size: 11px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    display: none;
+}
+
+form .remember input:checked+label>span.custom-ch::before {
+    display: block;
+}
+
+form>input.submit {
+    background-color: #0075ff;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+form>input.submit:hover {
+    background-color: #0d69d5;
+}
