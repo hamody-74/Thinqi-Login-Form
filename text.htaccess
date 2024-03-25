@@ -1,4 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP:Accept-Language} ^ar [NC]
-RewriteRule ^$ index-ar.html [L]
-RewriteRule ^$ index-en.html [L]
